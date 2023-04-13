@@ -1,0 +1,51 @@
+{
+    "name": "delgont/mtnmomo",
+    "description" : "Larevel MTN Momo package",
+    "keywords": [
+        "laravel MTN Momo"
+    ],
+    "homepage": "https://github.com/delgont/laravel-mtn-momo",
+    "type" : "project",
+    "license" : "MIT",
+    "authors" : [
+        {
+            "name" : "Stephen Okello Omoding",
+            "email" : "okellostephenomoding@gmail.com",
+            "role" : "Developer"
+        },
+        {
+            "name" : "Stephen Delgont",
+            "email" : "stephen.delgont@outlook.com",
+            "role" : "Project Manager, Developer"
+        }
+    ],
+    "require": {
+        "php" : "^7.3|^8.0|^8.1",
+        "illuminate/auth": "^7.0|^8.0|^9.0",
+        "illuminate/database": "^7.0|^8.0|^9.0",
+        "laravel/helpers": "^1.5.0",
+        "doctrine/dbal": "^2.6"
+    },
+    "prefer-stable": true,
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Delgont\\MtnMomo\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Delgont\\MtnMomo\\Test\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Delgont\\MtnMomo\\MtnMomoServiceProvider"
+            ]
+        }
+    }
+}
